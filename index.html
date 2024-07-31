@@ -1,44 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Blog</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Quiz App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section class="blog-posts">
-      <h1>Recent Blog Posts</h1>
-      <ul>
-        <li>
-          <a href="post1.html">
-            <h2>Post 1 Title</h2>
-            <p>Post 1 excerpt</p>
-          </a>
-        </li>
-        <li>
-          <a href="post2.html">
-            <h2>Post 2 Title</h2>
-            <p>Post 2 excerpt</p>
-          </a>
-        </li>
-        <!-- Add more blog post links here -->
-      </ul>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2024 My Blog</p>
-  </footer>
-  <script src="script.js"></script>
+    <h1>Simple Quiz App</h1>
+    <div class="quiz-container">
+        <div class="question">
+            <p id="question-text"></p>
+            <ul id="options">
+                <li><input type="radio" id="option1" name="option"><label for="option1"></label></li>
+                <li><input type="radio" id="option2" name="option"><label for="option2"></label></li>
+                <li><input type="radio" id="option3" name="option"><label for="option3"></label></li>
+                <li><input type="radio" id="option4" name="option"><label for="option4"></label></li>
+            </ul>
+            <button id="submit">Submit</button>
+        </div>
+        <div class="score">
+            <p id="score-text">Score: 0/0</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
